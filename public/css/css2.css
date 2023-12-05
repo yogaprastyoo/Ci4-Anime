@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Square+Peg&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;1,300&display=swap");
+
+/* ====================All==================== */
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #fbf8f1;
+}
+
+.wrapper {
+  height: 96vh;
+  /* background-color: #000; */
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn:focus,
+.btn:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn-home {
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.76);
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.76);
+  -moz-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.76);
+}
+
+.menfess {
+  margin-top: 200px;
+}
+
+#menfess {
+  margin-top: 50px;
+  letter-spacing: 10px;
+}
+
+.des {
+  letter-spacing: 2px;
+  font-size: 9px;
+  width: 0;
+  margin-bottom: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: animasi-ketik 8s infinite steps(70, end);
+  animation-delay: 1s;
+}
+
+@keyframes animasi-ketik {
+  0% {
+    width: 0;
+  }
+
+  95% {
+    width: 100%;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+.reg {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+
+/* ====================End-All==================== */
+
+.tambah-data {
+  margin-left: 93%;
+  margin-bottom: 40px;
+  font-size: 35px;
+  cursor: pointer;
+  color: #000;
+  /* background-color: red; */
+  width: 35px;
+  transition: all 0.5s;
+}
+
+.tambah-data:hover {
+  color: #08d9d6;
+}
+
+.form-floating {
+  border-radius: 0px;
+}
+
+/* ----------------------------------------------------------project */
+.form-add {
+  border: none;
+  width: 95%;
+  background-color: transparent;
+}
+
+.form-add::-webkit-outer-spin-button,
+.form-add::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+  float: right;
+}
+
+.custom-file-input::before {
+  content: " ";
+}
+
+.alert {
+  position: fixed;
+  top: 20px;
+  right: 0;
+  width: 500px;
+  z-index: 999999999999999;
+}
+
+.form-select {
+  margin-top: -20px;
+  margin-left: 10px;
+  padding: 0;
+}
+
+/* ====================Login==================== */
+
+.home-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.form-logreg {
+  width: 600px;
+}
+
+.form-floating .form-control {
+  border-radius: 0;
+  background-color: transparent;
+  margin: 0px;
+}
+
+.form-logreg input:focus,
+.form-logreg textarea:focus {
+  border: 1px solid black;
+}
+
+.btn-logreg .btn {
+  width: 100%;
+  border-radius: 0;
+  letter-spacing: 5px;
+}

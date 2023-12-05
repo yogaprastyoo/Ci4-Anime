@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,200&display=swap");
+
+.btn:focus,
+.btn:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+body {
+  background-color: #fbf8f1;
+  overflow: scroll;
+}
+
+.tambah-data {
+  margin-left: 93%;
+  margin-bottom: 40px;
+  font-size: 35px;
+  cursor: pointer;
+  color: #000;
+  /* background-color: red; */
+  width: 35px;
+  transition: all 0.5s;
+}
+
+.tambah-data:hover {
+  color: #08d9d6;
+}
+
+.form-floating {
+  border-radius: 0px;
+}
+
+/* ----------------------------------------------Navbar */
+
+.navbar {
+  animation: nav 1s forwards;
+  animation-delay: 2.5s;
+}
+
+.navbar .navbar-brand {
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+
+  font-size: 24px;
+  border: none;
+}
+
+.navbar .navbar-brand:hover {
+  color: #f39c12;
+}
+
+.navv {
+  font-family: "Poppins:ital", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.navv * {
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.navv li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 19px;
+  overflow: hidden;
+}
+
+.navv a {
+  padding: 0 5px 0 2px;
+  color: #000;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1px;
+  margin: 0;
+  text-decoration: none;
+}
+
+.navv a:before,
+.navv a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.navv a:before {
+  right: 100%;
+  display: block;
+  width: 3px;
+  height: 100%;
+  content: "";
+  background-color: #08d9d6;
+}
+
+.navv a:after {
+  padding: 0 0.5em 0 0.2em;
+  position: absolute;
+  right: 100%;
+  top: 0;
+  content: attr(data-hover);
+  color: black;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.navv li:hover a {
+  transform: translateX(105%);
+}
+
+/*------------------------------------------------------------------- body */
+
+.content {
+  position: relative;
+  top: 100px;
+}
+
+.content h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+}
+
+main img {
+  float: right;
+}
+
+.ketik {
+  font-size: 90px;
+  width: 0;
+  margin-bottom: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: animasi-ketik 3s infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animasi-ketik {
+  0% {
+    font-size: 0px;
+    color: red;
+  }
+
+  50% {
+    color: transparent;
+  }
+
+  100% {
+    color: #000;
+  }
+}
+
+/* ----------------------------------------------------------project */
+
+td img {
+  width: 100px;
+}
+
+.form-add {
+  border: none;
+  width: 95%;
+  background-color: transparent;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+  float: right;
+}
+
+.custom-file-input::before {
+  content: " ";
+}
+
+.alert {
+  position: fixed;
+  top: 20px;
+  right: 0;
+  width: 500px;
+  z-index: 999999999999999;
+}
